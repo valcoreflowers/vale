@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./mensaje.css">
+    <title>Mensaje cifrado y Mensaje descifrado </title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <section class="first">
+                <em><h2>Texto original</h2></em>
+                <input id="mens1"   required type="text"><br>
+                <br><button onclick="Textocifra()" id="botones" >Cifrar</button>
+                <em></em><h2>Texto cifrado</h2></em>
+                <input id="mens2" type="text" disabled>
+            </section>
+
+            <section class="second">
+                <em><h2><br>"Selecciona el desplasamiento que gustes" </h2></em>
+                <input id="numeros" required type="number" value="1">
+            </section>
+            <section class="second">
+                <h2><em>Texto cifrado</em></h2>
+                <input id="mens3" required type="text"><br>
+                <br><button onclick="Textodes()" id="botones" >Descifrar</button>
+                <em><h2>Texto descifrado</h2></em>
+                <input id="mens4" type="text" disabled> 
+
+                <button onclick="reiniciar()" id="boton">Reiniciar</button>
+            </section>
+        </div>
+    </main>
+    <script src="./mensaje.js"></script>
+</body>
+</html>
